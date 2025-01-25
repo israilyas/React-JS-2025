@@ -79,3 +79,15 @@ Like we dont use any loop/condition here like `username?username:null`
 --- 
 
 ## Hooks
+
+---
+
+# Virtual DOM
+
+- createRoot Method => Create a DOM like structure just like browser DOM => Compare main DOM and its own DOM => and update only those things that are updated in UI 
+
+- browser DOM => remove complete DOM if any changes in UI and repaint complete DOM => Which is called page reloading
+
+### ReactFiber
+
+![alt text](<Screenshot 2025-01-25 204641.png>)
