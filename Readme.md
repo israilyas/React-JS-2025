@@ -65,3 +65,17 @@ now render `root.render(JSX elements)`
 
 ### React Fragements
 - used to group jsx elements `<></>`
+
+---
+
+## EValuated Expression.
+
+- `<h1>Hello World {username}</h1>`
+
+The curly braces in which i have passed username is a evaluated expression.
+When we retrun a component we only use evaluated expression i.e final expression.
+Like we dont use any loop/condition here like `username?username:null`
+
+--- 
+
+## Hooks
