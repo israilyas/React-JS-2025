@@ -84,10 +84,35 @@ Like we dont use any loop/condition here like `username?username:null`
 
 # Virtual DOM
 
-- createRoot Method => Create a DOM like structure just like browser DOM => Compare main DOM and its own DOM => and update only those things that are updated in UI 
+- createRoot Method => Create a DOM like structure just like browser DOM => Compare main DOM and its own DOM => and update only those things that are updated in UI  => It is virtual DOM
 
 - browser DOM => remove complete DOM if any changes in UI and repaint complete DOM => Which is called page reloading
 
 ### ReactFiber
 
-![alt text](<Screenshot 2025-01-25 204641.png>)
+- The goal of React Fiber is to increase its suitability for areas like animation,layout, and gestures.
+- Its headline feature is incremental rendering.
+
+### Features
+
+- Ability to pause
+- abort
+- reuse
+- ability to assign priority to different types of updates (hydration)
+- Hydration => Injection of javascript
+
+Jab pehli baar page load hota hai, buttons aur images dikhte hain (HTML aa gaya), lekin kuch click nahi hota kyunki JavaScript ab tak load nahi hui hoti. Phir jab JavaScript load ho ke React ko HTML ke saath connect karti hai aur sab interactive ho jata hai, us process ko hydration bolte hain. aur ye fibre algorithm k through kaafi aachi hoti hai
+
+
+![React Fiber Document link](<Screenshot 2025-01-25 204641.png>)
+
+## Reconciliation
+
+- ### Reconciliation
+The algorithm React uses to differentiate one tree with another tree(VirtualDOM and webDOM) to determine which part to be changed.
+(Browser tree and React Tree that is created by createRoot Method)
+
+git also work in differenciation algo(differentiate od files and new files)
+
+- ### Update 
+A change n the data used to render a React app. Usually the result of 'setState'. Eventually result in a re render.
