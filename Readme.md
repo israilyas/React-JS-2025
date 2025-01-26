@@ -2,6 +2,7 @@
 #### NPX => Node package Executor
 
 --
+# React Foundation
 
 ### Run Project
 
@@ -164,4 +165,10 @@ Fiber is a ground-up rewrite of the reconciler
 - reuse previously completed work.
 - abort work if it's no longer needed
 
+---
 
+
+# Lecture 7
+
+- props 
+- tailwind configuration
