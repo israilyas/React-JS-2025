@@ -172,3 +172,7 @@ Fiber is a ground-up rewrite of the reconciler
 
 - props 
 - tailwind configuration
+
+# 06 project
+
+API: `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`

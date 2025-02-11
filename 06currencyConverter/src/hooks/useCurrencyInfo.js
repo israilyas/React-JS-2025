@@ -1,23 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect,useState } from "react";
 
-function useCurrencyInfo(currency) {
-  const [data, setData] = useState({});
+function useCurrencyInfo(currency){
+    const [data, setData]= useState({})
 
-  useEffect(() => {
-    fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to fetch");
-        return res.json();
-      })
-      .then((res) => {
-        if (res[currency]) {
-          setData(res[currency]);
-        }
-      })
-      .catch((error) => console.error("Fetch error:", error));
-  }, [currency]);
+    useEffect(()=>{
 
-  return data;
+        fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
+        .then((res)=>res.json())
+        .then((res)=>setData(res[currency]))
+        console.log(data)
+    },[currency])
+    console.log(data)
+    return data
 }
 
-export default useCurrencyInfo;
+export default useCurrencyInfo
+
+// useEffect => automatically fetch called when dependency mounted (triggered lifecycle event )
+// useEffect => call back, dependency array
+
