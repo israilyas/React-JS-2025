@@ -176,3 +176,20 @@ Fiber is a ground-up rewrite of the reconciler
 # 06 project
 
 API: `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`
+
+# 07 React Router 
+
+- ## Link and Navlink
+
+- ### LINK
+- Link is used in place of `a` tag . `a` tag reloads/refresh complete page while `Link` don't load complete page.
+
+- ### Navlink
+- Navlink provide additional things
+
+### Router 
+- routerprovider
+- router array
+- createBrouserRouter => this method takes array
+- createRoutesFromElements => Method
+- outlet (for dynamic content on routing)
