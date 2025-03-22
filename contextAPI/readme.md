@@ -38,3 +38,33 @@ This can make your code messy and harder to manage. To avoid prop drilling, you 
 ### Which One to Use?
 - If your state is simple and limited to a few components → Context API ✅
 - If your app has complex global state with many updates → Redux ✅
+
+---
+
+### State Management Libraries
+
+- Redux 
+- If we use redux in react => Redux-react
+- Redux easier version => Redux-Toolkit (RTK)
+- Zustand
+
+# Notes
+
+## Steps 
+
+### 1- Create a Context
+`const UserContext = React.createContext()`
+- This creates a new Context called `UserContext`.
+- It acts as a container for shared data that multiple components can access.
+
+
+### 2- Export the Context
+`export default UserContext`
+- This exports UserContext, so it can be used in other files.
+
+## How to Use Context in a React App
+
+- ✅ Step 1: Wrap your component tree with UserContext.Provider and pass a value.
+- ✅ Step 2: Use useContext(UserContext) inside child components to access the value.
+
+
